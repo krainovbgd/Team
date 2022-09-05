@@ -1,0 +1,114 @@
+:root {
+    --colm: 94px;
+    --colw720: calc( (100% - var(--colm)*3) / 2);
+    --colw: calc( (100% - var(--colm)*3) / 3);
+}    
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background: #e2e2e2;
+    font-size: 1.25rem;
+    background-color: #F7FAFC;
+}
+.team {
+    margin: auto;
+    min-width: 360px; 
+    padding: 0 5px;
+}
+.about {
+    max-width: 677px;
+    margin: auto;
+    text-align: center;
+    color: #1A202C;
+    margin-bottom: 40px;
+}
+.about__h1 {
+    margin-bottom: 16px;
+}
+.row {
+    font-size: 0;
+} 
+.col {
+    font-size: initial;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+    max-width: 343px;
+}
+.col__photo {
+    margin-bottom: 16px;
+}
+.col__name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.3rem;
+    color: #1A202C;
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+.col__job {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #718096;
+    line-height: 1.125rem;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.col__info {
+    max-width: 343px;
+    margin: auto;
+    padding: 0 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4A5568;
+    list-style: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.col__link {
+    margin-top: 0;
+}
+@media (min-width: 720px) {
+    .team {
+        max-width: 1020px;
+        padding: 0;
+    }
+    .about__h1 {
+        font-weight: 800;
+        font-size: 3.75rem;
+        line-height: 60px;
+    }
+    .about__paragraph {
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 30px;
+    }
+    .col {
+        display: inline-block;
+        width: var(--colw720);
+        margin-left: var(--colm);
+        
+    }
+}
+@media (min-width: 1024px) {
+    .team {
+        max-width: 1220px;
+    }
+    .about {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .row {
+        margin-left: calc(var(--colm) * -1);
+    }
+    .col {
+        display: inline-block;
+        width: var(--colw);
+        margin-left: var(--colm);
+        margin-bottom: 80px;
+        
+    }
+}
+
